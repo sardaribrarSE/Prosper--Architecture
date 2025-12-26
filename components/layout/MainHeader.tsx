@@ -48,7 +48,7 @@ export function Header() {
       )}
       <header
         className="fixed z-40 w-full bg-white/80 backdrop-blur-md "
-        style={{ top: showTopBar ? "50px" : "0px" }}
+        style={{ top: showTopBar ? "48px" : "0px" }}
       >
         <div className="flex items-center justify-between px-4 py-5 md:px-20">
           {/* Logo */}
