@@ -60,7 +60,7 @@ export default function WorkList({ allItems, featuredItems }: Props) {
     <>
       {/* Intro */}
       <section className="flex flex-col items-center px-4 text-center">
-        <h1 className="max-w-4xl font-poppins text-xl leading-relaxed text-[#141414] sm:text-2xl md:text-[32px]">
+        <h1 className="max-w-4xl font-poppins text-xl leading-relaxed text-[#141414] sm:text-2xl md:text-[32px] mt-10">
           We don&apos;t just design and build; we dream, envision,
           <br className="hidden sm:block" />
           and create! Our ideas come to life through

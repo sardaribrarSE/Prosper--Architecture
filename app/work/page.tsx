@@ -12,7 +12,7 @@ export default async function WorkPage() {
   return (
     <div className="min-h-screen bg-primary-700 px-20 py-5">
       <main className=" ">
-        <section className="mt-14">
+        <section className="mt-28">
           <WorkList allItems={items} featuredItems={featured} />
         </section>
       </main>

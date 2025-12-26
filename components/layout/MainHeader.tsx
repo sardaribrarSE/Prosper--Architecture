@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSwatchbook } from "@fortawesome/free-solid-svg-icons";
 const navItems = [
   { label: "Work", href: "/work" },
   { label: "Studio", href: "/studio" },
@@ -46,10 +47,10 @@ export function Header() {
         </div>
       )}
       <header
-        className="fixed z-40 w-full bg-white/80 backdrop-blur-md -mt-2"
-        style={{ top: showTopBar ? "52px" : "0px" }}
+        className="fixed z-40 w-full bg-white/80 backdrop-blur-md "
+        style={{ top: showTopBar ? "50px" : "0px" }}
       >
-        <div className="flex items-center justify-between px-4 py-4 md:px-20">
+        <div className="flex items-center justify-between px-4 py-5 md:px-20">
           {/* Logo */}
           <Link
             href="/"
@@ -62,13 +63,11 @@ export function Header() {
           <div className="flex items-center gap-6">
             {/* Menu Icon */}
             <button
-              onClick={() => setMenuOpen(true)}
+              onMouseEnter={() => setMenuOpen(true)}
               aria-label="Open menu"
-              className="flex flex-col gap-1"
+               className="text-2xl text-zinc-900 hover:opacity-70 transition"
             >
-              <span className="h-[2px] w-6 bg-zinc-900" />
-              <span className="h-[2px] w-6 bg-zinc-900" />
-              <span className="h-[2px] w-6 bg-zinc-900" />
+               <FontAwesomeIcon icon={faSwatchbook} />
             </button>
 
             <button className="hidden md:inline-flex items-center gap-2 rounded-sm bg-black px-5 py-2 text-xs font-medium uppercase tracking-wide text-white">
@@ -91,7 +90,7 @@ export function Header() {
             onClick={() => setMenuOpen(false)}
             className="text-sm uppercase tracking-widest"
           >
-            Close ✕
+            Close 
           </button>
         </div>
 
